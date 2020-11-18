@@ -1,0 +1,207 @@
+.skills {
+    font-size: 1.3vw;
+    text-align: center;
+    font-family: garamond;
+}
+.top {
+    z-index: 5000;
+    width: 100vw;
+    padding: 10px 0px;
+    /* max-height: 15.5%;  GETS GREY TO STOP.. but we need to do it for the words*/
+    display: block;
+    opacity: 1;
+    background-color: #2b2b2b;
+    position: fixed;
+}
+.inner_top{
+    position: relative;
+    width: 94vw;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.brand{
+    height: 100%;
+    display: table;
+    float: left;
+}
+.brand a{
+    color: white;
+    height: 100%;
+    font-size: 25px;
+    font-weight: 200;
+    display: table-cell;
+    vertical-align: middle;
+}
+.brand a span{
+    font-weight: 800;
+    color: #D68400;    /* FF9D00 */
+}
+.options{
+    float: right;
+    font-size: 15px;
+}
+.options a{
+    float: left;
+    padding: 10px 1.6vw;
+    color: white;
+}
+.options a:last-child{
+    padding-right: 0;
+}
+.top1 {
+    padding: 40px;
+}
+.projects {
+    position: relative;
+    z-index: -1;
+    left: 2.5%;
+}
+.col-md-4 {
+    overflow: hidden;
+    width: 330px;
+    height: 210px;
+    border-radius: 3px;
+}
+#pic1 {
+    width: 330px;
+    height: auto;
+    margin-bottom: 60px;
+}
+.Noahraypic{
+    width: 150%;
+    max-width: 1000px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+.rightback{
+    z-index: -12;
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    margin-left: 50.1%;
+    background-color: black;
+}
+.fade_in{
+    animation: fadein 3s;
+}
+.fade_inquick{
+    animation: fadein 2.1s;
+}
+
+@keyframes fadein {
+    from{
+        opacity: .2;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.rightbb{
+    z-index: -20;
+    height: 100vw;
+    width: 50vw;
+    position: absolute;
+    margin-left: 50.15%;
+    margin-top: 60px;
+    background-color: grey;
+}
+.rates{
+    position: absolute;
+    height: 96vw;
+    margin: 40% 10%;
+    width: 100vw;
+}
+.contact_sheet{
+    z-index: 1900;
+    position: fixed;
+    height: 17vw;
+    width: 13vw;
+    right: 0px;
+    bottom: 0px;
+    background-color: #2b2b2b;
+}
+.content1{
+    text-align: center;
+}
+.content11{
+    display: inline-block;
+    padding-top: 1vw;
+    Font-size: 1.5vw;
+    color: white;
+}
+.inputt{
+    height: 2vw;
+    width: 11vw;
+}
+.onwhite{
+    z-index: 2000;
+    color: black;
+    padding: 5vw 5vw;
+    top: 40vw;
+    left: 0%;
+    position: fixed;
+}
+.onblack{
+    z-index: 2001;
+    color: white;
+    padding: 5vw 5vw;
+    top: 40vw;
+    right: 0%;
+    position: fixed;
+}
+.word1{
+    font-size: 8vw;
+    text-align: right;
+}
+.word2{
+    font-size: 8vw;
+    text-align: left;
+}
+.fullfull {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1050;
+}
+.righthalf{
+    right: 0;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    z-index: 1060;
+}
+.lefthalf{
+    left: 0;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    z-index: 1070;
+}
+.container {
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.toplist {
+    width: 90%;
+    height: 10%;
+    margin: 2% 2%;
+    position: fixed;
+    background-color: red;
+}
+.abtpic {
+    width: 46%;
+    height: 84%;
+    margin: 2% 2%;
+    background-color: blue;
+}
+.abttext {
+    width: 46%;
+    height: 84%;
+    margin: 2% 2%;
+    background-color: pink;
+}

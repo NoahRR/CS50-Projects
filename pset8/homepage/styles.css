@@ -1,0 +1,639 @@
+/* FONTS:
+norm: font-family: 'Inria Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+Helvetica
+*/
+
+.skills {
+    font-size: 1.3vw;
+    text-align: center;
+    font-family: garamond;
+}
+.botheader {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 0;
+}
+.botheaderrel {
+    position: relative;
+    top: 0;
+}
+.toprel {
+    position: absolute;
+}
+.top {
+    z-index: 5000;
+    top: 0;
+    width: 100vw;
+    padding: 10px 0px;
+    display: block;
+    opacity: 1;
+    background-color: #2b2b2b; /*2b2b2b*/
+    position: fixed;
+}
+.inner_top{
+    position: relative;
+    width: 94vw;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.brand{
+    height: 100%;
+    display: table;
+    float: left;
+}
+.brand a{
+    color: white;
+    height: 100%;
+    font-size: 25px;
+    font-weight: 200;
+    display: table-cell;
+    vertical-align: middle;
+}
+.brand a span{
+    font-weight: 800;
+    color: #d68400;    /* FF9D00 or D68400*/
+}
+.options{
+    float: right;
+    font-size: 15px;
+}
+.options a{
+    float: left;
+    padding: 10px 1.6vw;
+    color: white;
+}
+.options a:last-child{
+    padding-right: 0;
+}
+.top1 {
+    padding: 40px;
+}
+.projects {
+
+}
+.col-md-4 {
+    overflow: hidden;
+    width: 330px;
+    height: 210px;
+    border-radius: 3px;
+}
+#pic1 {
+    width: 330px;
+    height: auto;
+    margin-bottom: 60px;
+}
+.Noahraypic{
+    width: 150%;
+    max-width: 1000px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+.rightback{
+    z-index: -12;
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    margin-left: 50.1%;
+    background-color: black;
+}
+.fade_in{
+    animation: fadein 3s;
+}
+.fade_inquick{
+    animation: fadein 2.1s;
+}
+
+@keyframes fadein {
+    from{
+        opacity: .2;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.rightbb{
+    z-index: -20;
+    height: 100vw;
+    width: 50vw;
+    position: absolute;
+    margin-left: 50.15%;
+    margin-top: 60px;
+    background-color: grey;
+}
+.rates{
+    position: absolute;
+    height: 96vw;
+    margin: 40% 10%;
+    width: 100vw;
+}
+.contact_sheet{
+    z-index: 1900;
+    position: fixed;
+    height: 17vw;
+    width: 13vw;
+    right: 0px;
+    bottom: 0px;
+    background-color: #2b2b2b;
+}
+.content1{
+    text-align: center;
+}
+.content11{
+    display: inline-block;
+    padding-top: 1vw;
+    Font-size: 1.5vw;
+    color: white;
+}
+.inputt{
+    height: 2vw;
+    width: 11vw;
+}
+.onwhite{
+    z-index: 2000;
+    color: black;
+    padding: 5vw 5vw;
+    top: 40vw;
+    left: 0%;
+    position: fixed;
+}
+.onblack{
+    z-index: 2001;
+    color: white;
+    padding: 5vw 5vw;
+    top: 40vw;
+    right: 0%;
+    position: fixed;
+}
+.word1{
+    font-size: 8vw;
+    text-align: right;
+}
+.word2{
+    font-size: 8vw;
+    text-align: left;
+}
+.fullfull {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1050;
+    font-family: 'Montserrat', sans-serif;
+}
+.righthalf{
+    right: 0;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    z-index: 1060;
+}
+.lefthalf{
+    left: 0;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    z-index: 1070;
+}
+.container {
+    margin: 0 auto;
+    top: 0;
+    position: relative;
+}
+.r1 {
+    overflow: hidden;
+    width: 100%;
+    height: 10%;
+    position: relative;
+    margin: 0 auto;
+    background-color: pink;
+}
+.r2 {
+    overflow: hidden;
+    width: 100%;
+    height: 90%;
+    position: relative;
+    margin: 0 auto;
+    background-color: red;
+}
+.r1text {
+    font-size: 25px;
+    text-align: center;
+    padding: 2% 0;
+    margin: 0;
+}
+.abttext {
+    display: block;
+    position: relative; /*why doesn't absolute position work here??*/
+    right: 0%;    /* IF I take out position and right/left stuff.. andjsut put "float: left"... just like in vid.. then it works!!!!!!.. but why doesn't absolute work here?*/
+    width: 45%;
+    height: 90%;
+}
+.grid-container {
+    width: 95%;
+    height: 100vh;
+    margin: 6vh auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 5% 2fr;
+    grid-row-gap: 1%;
+}
+#port-head {
+    grid-row: 1;
+    grid-column: 1 / 13;
+}
+#port-options {
+    grid-row: 2;
+    grid-column: 1 / 8;
+    align-self: center;
+    z-index: 300;
+}
+#port-projects {
+    grid-row: 3;
+    grid-column: 1 / 13;
+}
+.card {
+    width: 170px;
+    float: left;
+    font-family: 'Inria Sans', sans-serif;
+}
+.card-img-top {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+.card-title {
+    text-align: center;
+}
+.card-text {
+    margin-top: 20px;
+}
+.card-body p {
+    text-align: center;
+}
+.card-body a {
+    position: absolute;
+    font-size: 16px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 20px;
+    float: left;
+}
+.card-body span {
+    font-size: 12px;
+    float: left;
+}
+.spanmid {
+    display: table;
+    margin: 0 auto;
+}
+#port-head {
+    position: relative;
+    height: 50vw;
+}
+#port-head img {
+    z-index: 20;
+    height: auto;
+    width: 100.05%;
+    object-fit: cover;
+}
+#smallblack {
+    z-index: -1;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100vh;
+}
+.dropdown{
+    padding-left: 15px;
+}
+.abt-grid {
+    width: 100%;
+    height: 100vh;
+    margin: 6vh auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-row-gap: 1%;
+}
+#abtpic {
+    position: absolute;
+    z-index: 200;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#abtpic img {
+    width: 250px;
+    height: 250px;
+    transition: ease 3s;
+}
+#cirword {
+    position: relative;
+    color: black;
+    grid-row: 1/8;
+    grid-column: 1/13;
+}
+#w1,#w2,#w3,#w4,#w5,#w6 {
+    z-index: 300;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+#w1{
+    color: white;
+    padding: 0 5px;
+    background-color: black;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+#w2{
+    position: absolute;
+    left: 5%;
+    bottom: 35%;
+}
+#w3{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+#w4{
+    position: absolute;
+    right: 5%;
+    top: 10%;
+}
+#w5{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+#w6 {
+    position: absolute;
+    right: 20%;
+    bottom: 40%;
+}
+#abtext {
+    grid-row: 8/13;
+    grid-column: 1/13;
+    background-color: black;
+    font-family: 'Inria Sans', sans-serif;
+}
+#abtext p {
+    color: white;
+    font-size: 20px;
+}
+#abtbigblack {
+    position: absolute;
+    background-color: black;
+    z-index: -400;
+    width: 100%;
+    height:500px;
+    top: 70%;
+}
+#contimg {
+    position: relative;
+    margin: 100px auto 0;
+    width: 500px;
+}
+#contimg img {
+    width: 95%;
+    height: auto;
+}
+#ratess {
+    width: 80%;
+    margin: 10px 10%;
+    height: 400px;
+}
+#resume {
+    margin-right: 15px;
+    float: right;
+}
+#port-options2 {
+    grid-row: 2;
+    grid-column: 8 / 13;
+    align-self: center;
+    z-index: 300;
+}
+
+/* responsive */
+/* responsive */
+/* responsive */
+
+/* account for wider screens (normal cp) */
+@media only screen and (min-width: 744px) {
+
+    .onwhite{
+        padding: 0vw 5vw;
+        top: 37%;
+        left: 0;
+        position: fixed;
+    }
+    .onblack{
+        padding: 0vw 5vw;
+        top: 37%;
+        right: 0;
+        position: fixed;
+    }
+    .word1{
+        font-size: 60px;
+    }
+    .word2{
+        font-size: 60px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* ABOUT ME */
+    .container {
+        width: 750px;
+        height: auto;
+    }
+
+    /* PORTFOLIO */
+    .grid-container {
+        width: 728px;
+    }
+    .card {
+        width: 33.3333333%;
+        height: 510px;
+    }
+    #port-head {
+        height: 430px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* ABOUT ME */
+    .container {
+        width: 970px;
+        height: auto;
+    }
+
+    /* PORTFOLIO */
+    .grid-container {
+        width: 952px;
+    }
+    .card {
+        width: 25%;
+        height: 510px;
+    }
+    #port-head {
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* ABOUT ME */
+    .container {
+        width: 1170px;
+        height: auto;
+    }
+
+    /* PORTFOLIO */
+    .grid-container {
+        width: 1160px;
+    }
+    .card {
+        width: 25%;
+        height: 460px;
+    }
+    #port-head {
+        height: 500px;
+    }
+    #w1,#w2,#w3,#w4,#w5,#w6 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* ABOUT ME */
+    .container {
+        width: 100%;
+        height: auto;
+    }
+
+    /* PORTFOLIO */
+    .grid-container {
+        width: 95%;
+    }
+    .card {
+        width: 33.333333%;
+        height: 550px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    #w1,#w2,#w3,#w4,#w5,#w6 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 645px) {
+    .card {
+        width: 50%;
+    }
+}
+
+/* account for hyper slim only for noahray.html*/
+@media only screen and (max-width: 535px) {
+
+    .Noahraypic{
+        width: 150%;
+        max-width: 1000px;
+        position: fixed;
+        top: 85vw;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+    }
+}
+@media only screen and (max-width: 503px) {
+    /*ABOUT ME*/
+    #w1,#w2,#w3,#w4,#w5,#w6 {
+        opacity: 0;
+        z-index: -200;
+    }
+    #abtpic {
+        position: absolute;
+        top: 30vw;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    #abtext {
+        position: absolute;
+        width: 100vw;
+        top: 100vw;
+        background-color: black;
+    }
+}
+/* account for mobile header (or just slim display) */
+@media only screen and (max-width: 488px) {
+
+    /* HEADER */
+    .options {
+        font-size: 4vw;
+        float: none;
+        position: relative;
+        left: 1.9%;
+    }
+    .brand{
+        height: 100%;
+        float: none;
+        margin: 0 auto;
+    }
+    .brand a {
+        font-size: 6.7vw;
+    }
+    .top {
+        padding: 2.5vw 0vw;
+    }
+    .options a{
+        padding: 2.5vw 1.6vw;
+    }
+    .options a:first-child{
+        padding-left: 0;
+    }
+
+    /* PORTFOLIO */
+    .grid-container {
+        margin: 25vw auto;
+    }
+    .card {
+        width: 100%;
+        height: 500px;
+    }
+
+    /*CONTACT AND RATES*/
+    #contimg {
+        margin: 30vw auto 0;
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 361px) {
+    #abtext {
+        position: absolute;
+        width: 100vw;
+        top: 360px;
+        background-color: black;
+    }
+    #abtext p {
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 259px) {
+    .card {
+        width: 232px;
+        height: 500px;
+    }
+    #contimg {
+        margin: 40vw auto 0;
+    }
+}

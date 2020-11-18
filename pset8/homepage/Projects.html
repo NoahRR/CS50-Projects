@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Coda&family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="pics/icon.png">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="Homepage.js"></script>
+        <title>Home</title>
+    </head>
+    <body style="background-color: black">
+
+        <div class="top">
+          <div class="inner_top">
+            <div class="brand">
+              <a href="index.html" class="fade_in">Noah<span style="color: #75bcde">Ray</span></a>
+            </div>
+
+            <div class="options">
+              <a href="index.html">Home</a>
+              <a href="Projects.html" style="color: grey" class="fade_inquick">Portfolio</a>
+              <a href="Aboutme.html">About Me</a>
+              <a href="Contactme.html">Contact Me & Rates</a>
+            </div>
+          </div>
+        </div>
+
+            <div id="smallwhite"></div>
+
+            <div class="grid-container" style="background-color: white">
+
+                <div id="port-head">
+                  <div id="smallblack"></div>
+                  <img src="pics/Portfoliotop.jpeg" alt="">
+                </div>
+
+                <div id="port-options">
+                    <div class="dropdown">
+                      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Filter
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button" onclick="ddefault()">Default</button>
+                        <button class="dropdown-item" type="button" onclick="al()">Show All</button>
+                        <button class="dropdown-item" type="button" onclick="cod()">Show Coding Projects</button>
+                        <button class="dropdown-item" type="button" onclick="mus()">Show Music Projects</button>
+                      </div>
+                    </div>
+                </div>
+                <div id="port-options2">
+                  <a href="resume.docx" download>
+                    <button type="button" class="btn btn-primary" id="resume">Download Resume</button>
+                  </a>
+                </div>
+
+
+                <div id="port-projects" style="background-color: white">
+                  <div>
+
+                    <div class="card" id="card_school_roster">
+                      <div>
+                        <img src="pics/cs50.jpg" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">School Roster</h5>
+                        <div class="spanmid">
+                          <span class="badge badge-secondary" style="background-color: #75bcde;">Coding</span><span>&ensp;</span><span class="badge badge-secondary">Python</span><span>&ensp;</span><span class="badge badge-secondary">Sequel</span>
+                        </div>
+                        <p class="card-text">Used Python to upload attending student's data into Sequel with the ability to view student information upon request.</p>
+                        <a href="#" class="btn btn-primary disabled">See Project</a>
+                      </div>
+                    </div>
+
+                    <div class="card" id="card_DNA">
+                      <div>
+                        <img src="pics/cs50.jpg" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">DNA Identifier</h5>
+                        <div class="spanmid">
+                          <span class="badge badge-secondary" style="background-color: #75bcde;">Coding</span><span>&ensp;</span><span class="badge badge-secondary">Python</span>
+                        </div>
+                        <p class="card-text">Used Python to inspect a DNA sequence and connect the patterns with a large database of people, thereby identifying who the DNA sample belongs to.</p>
+                        <a href="#" class="btn btn-primary disabled">See Project</a>
+                      </div>
+                    </div>
+
+                    <div class="card" id="card_spell">
+                      <div>
+                        <img src="pics/cs50.jpg" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Spell Checker</h5>
+                        <div class="spanmid">
+                          <span class="badge badge-secondary" style="background-color: #75bcde;">Coding</span><span>&ensp;</span><span class="badge badge-secondary">C</span><span>&ensp;</span><span class="badge badge-secondary">Python</span>
+                        </div>
+                        <p class="card-text">Created a program in C (and replicated in python) that checks text for spelling errors. Goals: use as little memory as possible and check as fast as possible. Optimization of data structures.</p>
+                        <a href="#" class="btn btn-primary disabled">See Project</a>
+                      </div>
+                    </div>
+
+                    <div class="card" id="card_filter">
+                      <div>
+                        <img src="pics/filter.jpg" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Image Filter</h5>
+                        <div class="spanmid">
+                          <span class="badge badge-secondary" style="background-color: #75bcde;">Coding</span><span>&ensp;</span><span class="badge badge-secondary">C</span><span>&ensp;</span><span class="badge badge-secondary">Python</span>
+                        </div>
+                        <p class="card-text">Created a program in C (and replicated in python) that implemented a "flip", "greyscale", or "line-detection" filter to an inputed image.</p>
+                        <a href="#" class="btn btn-primary disabled">See Project</a>
+                      </div>
+                    </div>
+
+                    <div class="card" id="card_recover" style="display: none;">
+                      <div>
+                        <img src="pics/cs50.jpg" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Lost Image Recovery</h5>
+                        <div class="spanmid">
+                          <span class="badge badge-secondary" style="background-color: #75bcde;">Coding</span><span>&ensp;</span><span class="badge badge-secondary">C</span><span>&ensp;</span><span class="badge badge-secondary">Python</span>
+                        </div>
+                        <p class="card-text">Created a program in C (and replicated in python) that went through raw card data and extracted all likely-to-be-JPG files.</p>
+                        <a href="#" class="btn btn-primary disabled">See Project</a>
+                      </div>
+                    </div>
+
+                    <div class="card" id="card_tideman" style="display: none;">
+                      <div>
+                        <img src="pics/cs50.jpg" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Tideman Election Simulator</h5>
+                        <div class="spanmid">
+                          <span class="badge badge-secondary" style="background-color: #75bcde;">Coding</span><span>&ensp;</span><span class="badge badge-secondary">C</span><span>&ensp;</span><span class="badge badge-secondary">Python</span>
+                        </div>
+                        <p class="card-text">Created a program in C (and replicated in python) that simulated a Tideman Election.</p>
+                        <a href="#" class="btn btn-primary disabled">See Project</a>
+                      </div>
+                    </div>
+
+                    <div class="card" id="card_readability" style="display: none;">
+                      <div>
+                        <img src="pics/cs50.jpg" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Readability</h5>
+                        <div class="spanmid">
+                          <span class="badge badge-secondary" style="background-color: #75bcde;">Coding</span><span>&ensp;</span><span class="badge badge-secondary">C</span><span>&ensp;</span><span class="badge badge-secondary">Python</span>
+                        </div>
+                        <p class="card-text">Created a program in C (and replicated in python) that measured the grade level of an inputed text file using the Coleman-Liau index.</p>
+                        <a href="#" class="btn btn-primary disabled">See Project</a>
+                      </div>
+                    </div>
+
+                    <div class="card" id="card_encrypter">
+                      <div>
+                        <img src="pics/cs50.jpg" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Message Encrypter</h5>
+                        <div class="spanmid">
+                          <span class="badge badge-secondary" style="background-color: #75bcde;">Coding</span><span>&ensp;</span><span class="badge badge-secondary">C</span><span>&ensp;</span><span class="badge badge-secondary">Python</span>
+                        </div>
+                        <p class="card-text">Created a program in C (and replicated in python) that prompted for a "key", and based on the key, the program would encrypt any inputed text.</p>
+                        <a href="#" class="btn btn-primary disabled">See Project</a>
+                      </div>
+                    </div>
+
+                    <div class="card" id="card_credit">
+                      <div>
+                        <img src="pics/cs50.jpg" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Credit Card Checker</h5>
+                        <div class="spanmid">
+                          <span class="badge badge-secondary" style="background-color: #75bcde;">Coding</span><span>&ensp;</span><span class="badge badge-secondary">C</span><span>&ensp;</span><span class="badge badge-secondary">Python</span>
+                        </div>
+                        <p class="card-text">Created a program in C (and replicated in python) that checked for the validity of a given inputed number using Luhn's Algorithm.</p>
+                        <a href="#" class="btn btn-primary disabled">See Project</a>
+                      </div>
+                    </div>
+
+                    <div class="card" id="card_miel" style="display: none;">
+                      <div>
+                        <img src="pics/music.jpg" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">miel_means_honey</h5>
+                        <div class="spanmid">
+                        <span class="badge badge-secondary" style="background-color: #1c36ab;">Music</span><span>&ensp;</span><span class="badge badge-secondary">EDM</span><span>&ensp;</span><span class="badge badge-secondary">lofi</span>
+                        </div>
+                        <p class="card-text">I have posted several songs on soundcloud. Although most of my music work I don't upload.</p>
+                        <a href="https://soundcloud.com/mielmeanshoney" target="_blank" class="btn btn-primary">My Soundcloud</a>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+                </div>
+    </body>
+</html>
