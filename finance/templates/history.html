@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<h4>Your Transactions</h4>
+<p> </p>
+<table id="in" style="width:100%; margin: 0 auto;">
+  <tr>
+    <th>Type</th>
+    <th style="padding: 5px 0;">Symbol</th>
+    <th>Stocks</th>
+    <th>Price</th>
+    <th>Time</th>
+    <th>Total</th>
+  </tr>
+  {% for unit in table %}
+      <tr class="tt">
+          {% if unit["typebuy"] == "Bought" %}
+              <td>{{unit['typebuy']}}</td>
+              <td style="padding: 5px 0;">{{ unit['symbol'] }}</td>
+              <td>{{ unit['stocks'] }}</td>
+              <td>${{ unit['price'] }}</td>
+              <td>{{ unit['time'] }}</td>
+              <td style="color: red;">${{ unit['total'] }}</td>
+          {% else %}
+              <td>{{unit['typebuy']}}</td>
+              <td style="padding: 5px 0;">{{ unit['symbol'] }}</td>
+              <td>{{ unit['stocks'] }}</td>
+              <td>${{ unit['price'] }}</td>
+              <td>{{ unit['time'] }}</td>
+              <td style="color: green;">${{ unit['total'] }}</td>
+          {% endif %}
+      </tr>
+  {% endfor %}
+</table>
+{% endblock %}

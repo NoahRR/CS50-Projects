@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<h4>Your Stocks</h4>
+<p> </p>
+<table id="in" style="width:100%; margin: 0 auto;">
+  <tr>
+    <th style="padding: 5px 0;">Symbol</th>
+    <th>Name</th>
+    <th>Shares</th>
+    <th>Price</th>
+    <th>Total</th>
+  </tr>
+  {% for row in user_table %}
+      <tr class="tt">
+          <td style="padding: 5px 0;">{{row["symbol"]}}</td>
+          <td>{{row["name"]}}</td>
+          <td>{{row["shares"]}}</td>
+          <td>${{row["price"]}}</td>
+          <td>${{row["total"]}}</td>
+      </tr>
+  {% endfor %}
+  <tr style="color: #25A300;">
+          <th style="padding: 5px 0;">unused money</th>
+          <th> </th>
+          <th> </th>
+          <th> </th>
+          <th>${{total}}</th>
+      </tr>
+</table>
+<br> <br>
+<form action="/" method="post">
+    <input type="text" placeholder="Stock Symbol" class="form-control" name="symbol" autocomplete="off">
+    <button class="btn btn-primary" type="submit">Quick Quote</button>
+</form>
+{% endblock %}

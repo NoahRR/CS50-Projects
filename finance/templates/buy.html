@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+    <h4>Enter stock symbol and amount wanted</h4>
+    <p> </p>
+    <form action="/buy" method="post">
+        <div class="form-group">
+            <input type="text" placeholder="Stock Symbol" class="form-control" name="symbol" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Amount" class="form-control" name="shares" autocomplete="off">
+        </div>
+        <button class="btn btn-primary" type="submit">Buy</button>
+    </form>
+    {% if check == True %}
+        <p> </p>
+        <p>NAME: {{dix["name"]}}</p>
+        <p>SYMBOL: {{dix["symbol"]}}</p>
+        <p>PRICE OF STOCK: {{dix["price"]}}</p>
+        <p>QUANTITY BOUGHT: {{ammt}}</p>
+        <p>TOTAL PRICE OF PURCHASE: {{pur_total}}</p>
+        <p>ID: {{username}}</p>
+        <p>TOTAL MONEY IN SYSTEM: {{total}}</p>
+    {% endif %}
+{% endblock %}
+
+{% block bot %}
+    <footer class="small text-center text-muted">
+        <span style="color: red;">Don't know stock symbols?</span> <a href="https://www.marketwatch.com/tools/quotes/lookup.asp" target="_blank">Click Here!</a>
+    </footer>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <h4>Enter stock symbol to get quote</h4>
+    <p> </p>
+    <form action="/quote" method="post">
+        <div class="form-group">
+            <input type="text" placeholder="Stock Symbol" class="form-control" name="symbol" autocomplete="off">
+        </div>
+        <button class="btn btn-primary" type="submit">Get Quote</button>
+    </form>
+
+    {% if results == True %}
+        {% if t != 1 %}
+            <p></p>
+            <div class="boxbox">
+                <h5>Name: {{dix["name"]}} ({{dix["symbol"]}})</h5>
+                <h5>Price: <span  style="color: #C50000;">{{dix["price"]}}</span></h5>
+            </div>
+        {% else %}
+            <p> </p>
+            <div class="boxbox">
+                <h5>No matches were found :(</h5>
+            </div>
+        {% endif %}
+    {% endif %}
+
+{% endblock %}
